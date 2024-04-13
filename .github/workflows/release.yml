@@ -114,7 +114,7 @@ jobs:
         zip -r drivers.zip metadata/ drivers/
   
     - name: Create Release and Upload drivers.zip
-      uses: softprops/action-gh-release@v1
+      uses: softprops/action-gh-release@v2
       with:
         files: build/drivers.zip
       env:
